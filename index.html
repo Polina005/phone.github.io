@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">s
+    <title>Ссылки задание 2 - Адаптивная версия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header">
+    <div class="container">
+        <div class="header-top">
+            <div class="собака">
+                <img src="собака.jpg" alt="собака убежала" width="180">
+            </div>
+            <nav class="main-nav">
+                <a href="http://kubsu.ru">Главная</a>
+                <a href="https://kubsu.ru/university">Об университете</a>
+                <a href="https://kubsu.ru/ru/university/departments">Факультеты</a>
+            </nav>
+        </div>
+        <div class="header-bottom">
+
+        </div>
+    </div>
+</header>
+
+
+
+зрщ<main class="main">
+    <div class="container">
+        <div class="content-wrapper">
+
+            <section id="table-section" class="content-section table-section">
+                <h2 class="section-title">Таблица факультетов</h2>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                        <tr>
+                            <th>Факультет</th>
+                            <th>Декан</th>
+                            <th>Количество студентов</th>
+                            <th>Аудитории</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Математики и компьютерных наук</td>
+                            <td>Иванова А.И.</td>
+                            <td>1200</td>
+                            <td>101-210</td>
+                        </tr>
+                        <tr>
+                            <td>Филологический</td>
+                            <td>Петров М.С.</td>
+                            <td>1100</td>
+                            <td>301-415</td>
+                        </tr>
+                        <tr>
+                            <td>Исторический</td>
+                            <td>Сидоров В.П.</td>
+                            <td>800</td>
+                            <td>501-510</td>
+                        </tr>
+                        <tr>
+                            <td>Экономический</td>
+                            <td>Иванов Е.В.</td>
+                            <td>800</td>
+                            <td>201-250</td>
+                        </tr>
+                        <tr>
+                            <td>Юридический</td>
+                            <td>Сергеев Д.К.</td>
+                            <td>150</td>
+                            <td rowspan="2">40-43</td>
+                        </tr>
+                        <tr>
+                            <td>Кинологический</td>
+                            <td>Собачкина Г.А.</td>
+                            <td>1300</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <section class="links-section">
+                <h2>Ссылки</h2>
+                <ol class="links-list">
+                    <li>
+                        Абсолютная гиперссылка на главную страницу сайта kubsu.ru
+                        <a href="http://kubsu.ru">Ссылка</a>
+                    </li>
+                    <li>
+                        Абсолютная на главную сайта kubsu.ru в протоколе https
+                        <a href="https://kubsu.ru">Ссылка</a>
+                    </li>
+                    <li>
+                        <p>Ссылка-изображение</p>
+                        <a href="https://kubsu.ru">
+                            <img src="собака.jpg" alt="Собака улыбака" width="150" height="150"  class="link-image">
+                        </a>
+                    </li>
+                    <li>
+                        Сокращенная ссылка на внутреннюю страницу
+                        <a href="/alk.html">Ссылка</a>
+                    </li>
+                    <li>
+                        Сокращенная ссылка на главную страницу
+                        <a href="/">Ссылка</a>
+                    </li>
+                    <li>
+                        <a href="#form">Ссылка на фрагмент текущей страницы (форма)</a>
+                    </li>
+                    <li>
+                        Ссылка с тремя параметрами в URL
+                        <a href="https://kubsu.ru/?faculty=rgf&area=op&group=13">Ссылка</a>
+                    </li>
+                    <li>
+                        Ссылка с параметром id в URL
+                        <a href="https://kubsu.ru/?id=660">Ссылка</a>
+                    </li>
+                    <li>
+                        Относительная ссылка в текущем каталоге
+                        <a href="..">Ссылка</a>
+                    </li>
+                    <li>
+                        Относительная ссылка в каталоге about
+                        <a href="/about">Ссылка</a>
+                    </li>
+                    <li>
+                        Относительная ссылка на уровень выше
+                        <a href="../..">Ссылка</a>
+                    </li>
+                    <li>
+                        Относительная ссылка на два уровня выше
+                        <a href="../../..">Ссылка</a>
+                    </li>
+                    <li>
+                        Контекстная ссылка в тексте
+                        Текст с <a href="#form">контекстной ссылкой</a> внутри.
+                    </li>
+                    <li>
+                        Ссылка на фрагмент стороннего сайта
+                        <a href="https://www.iana.org/help/example-domains#legalnotice">Ссылка</a>
+                    </li>
+                    <li>
+                        <p>Ссылка из областей картинки</p>
+                        <img src="po.png" alt="Картинка с разными областями" usemap="#po"
+                             width="627" height="324">
+                        <map name="po">
+                            <area shape="rect" coords="385,75,580,250" href="https://kubsu.ru/" alt="rect">
+                            <area shape="circle" coords="205,173,100" href="https://kubsu.ru/university" alt="circle">
+                        </map>
+                    </li>
+                    <li>
+                        Ссылка с пустым href
+                        <a href="">Cсылка</a>
+                    </li>
+                    <li>
+                        Ссылка без href
+                        <a>Ссылка</a>
+                    </li>
+                    <li>
+                        Ссылка с запретом перехода для поисковиков
+                        <a href="https://kubsu.ru/no-follow" rel="nofollow">Ссылка</a>
+                    </li>
+                    <li>
+                        Ссылка с запретом индексации
+                        <a href="https://kubsu.ru/no-index" rel="noindex">Cсылка</a>
+                    </li>
+                    <li>
+                        <p>Нумерованный список с title </p>
+                        <ol class="sublist">
+                            <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+                            <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
+                            <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        Ссылка на FTP с авторизацией
+                        <a href="ftp://student1:123@kubsu.ru/">FTP файл</a>
+                    </li>
+                </ol>
+            </section>
+        </div>
+
+        <h2>Форма обратной связи</h2>
+
+        <form action="/" method="post">
+            <div>
+                <label>ФИО:
+                    <input type="text" name="name" placeholder="Попова Полина Евгеньевна" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Телефон:
+                    <input type="tel" name="tel" placeholder="+7 (909) 451-43-93" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Email:
+                    <input type="email" name="email" placeholder="popova.p.2006@mail.ru"  required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>День рождения:
+                    <input type="date" name="birthday" value="2006-02-08" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                Пол:
+                <label>
+                    <input type="radio" checked name="sex" value="Мужской">
+                    Мужской
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="Женский">
+                    Женский
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>
+                    Любимые языкы программирования: <br>
+                    <select name="lang" multiple="multiple" size="11" required>
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="Cpp" selected>C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python" selected>Python</option>
+                        <option value="Java" selected>Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Биография: <br>
+                    <textarea cols="50" rows="5" required></textarea>
+                </label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="check-1" required>
+                    C контрактом ознакомлен(а)</label>
+            </div>
+            <div>
+                <button type="submit" style="margin: 10px;">Сохранить</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<img src="ca.jpg" alt="error" id="lol" style="margin-top: 1000px;">
+<footer id="site-footer">
+    <div class="container">
+        <p>&copy;2025 Руденко Алеся. Кубанский Государственный Университет</p>
+    </div>
+</footer>
+</body>
+</html>
