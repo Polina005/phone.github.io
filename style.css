@@ -271,7 +271,11 @@ tr:nth-child(odd) {
         margin: 10px 0;
         font-size: 0.9em;
     }
-
+ img{
+    display: flex;
+    max-width: 40%;
+    height: auto;
+ }
 
     @media (min-width: 768px) {
         body {
